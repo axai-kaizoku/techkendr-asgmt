@@ -4,7 +4,7 @@
 
 XYZ Industries, a leading home solutions. Providing you homes near popular metropolitan cities at a reasonable price. Choose us XYZ Industries.
 
-## [Live Application.](//)
+## [Live Application.](https://xyz-industry.onrender.com/)
 
 ## Tools & Resources
 
@@ -63,7 +63,7 @@ This application is covered by the MIT license.
 ## Deployment
 
 Application deployed on Render  
-[Live Demo](//)
+[Live Demo](https://xyz-industry.onrender.com/)
 
 ## Questions
 
