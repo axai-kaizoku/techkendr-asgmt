@@ -1,0 +1,12 @@
+.bottom {
+	width: 0;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 200px solid black; /* Change color as needed */
+}
+.top {
+	width: 0;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 200px solid black; /* Change color as needed */
+}
