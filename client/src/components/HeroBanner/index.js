@@ -2,9 +2,9 @@ import CustomBtn from '../CustomBtn';
 
 export default function HeroBanner() {
 	return (
-		<div className="w-4/5 flex flex-col items-center justify-center gap-20">
+		<div className="w-4/5 flex flex-col items-center justify-center max-sm:gap-10 gap-20">
 			<div>
-				<h1 className="text-7xl font-extrabold text-center whitespace-nowrap leading-[80px]">
+				<h1 className="max-sm:text-3xl text-7xl font-extrabold text-center whitespace-normal max-sm:leading-tight leading-[80px]">
 					CONNECTING DREAMS TO REALITY
 					<br />
 					<span className="italic font-bold text-cyan-600">YOUR PREMIER</span>
@@ -15,7 +15,7 @@ export default function HeroBanner() {
 					Where every search ends with a home
 				</p>
 			</div>
-			<div className="flex w-[56%] justify-between items-center">
+			<div className="flex max-sm:w-full w-[56%] justify-between items-center">
 				<CustomBtn title="Find Your Home" />
 				<CustomBtn title="List Your Property" />
 			</div>

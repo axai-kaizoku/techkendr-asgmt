@@ -2,17 +2,16 @@ import DetailBox from '../DetailBox';
 
 export default function DetailsSection() {
 	return (
-		<div className="w-full bg-detail-bg">
-			<h2 className="text-regal-blue text-7xl font-bold text-center mt-8 mb-0">
+		<div className="w-full bg-detail-bg mt-10">
+			<h2 className="text-regal-blue max-sm:text-6xl text-7xl font-bold text-center mt-8 mb-0">
 				WHY CHOOSE XYZ?
 			</h2>
 			<div className="w-full flex items-center mb-20 justify-center">
-				<div className="w-11/12 gap-10 flex max-sm:flex-col items-center justify-center ">
+				<div className="w-11/12 max-sm:gap-3 gap-10 sm:flex-wrap flex max-sm:flex-col items-center justify-center ">
 					<DetailBox
 						num="01"
 						title="SEARCH AND FILTERS"
-						description="
-Tailored Searches to meet your needs. Find what you’re looking for
+						description="Tailored Searches to meet your needs. Find what you’re looking for
 					with precision."
 					/>
 					<div className="mt-28 max-sm:mt-0">

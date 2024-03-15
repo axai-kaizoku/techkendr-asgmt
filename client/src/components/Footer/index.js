@@ -28,7 +28,7 @@ export default function Footer() {
 	return (
 		<footer className="h-fit flex justify-center items-center bg-regal-blue w-full text-white">
 			<div className="w-[88%] flex-col  flex  my-8 ">
-				<div className="flex justify-between max-sm:flex-col mt-14 mb-8">
+				<div className="flex justify-between max-sm:flex-col max-lg:flex-col max-md:flex-col mt-14 mb-8">
 					<div className="flex w-2/6 max-sm:w-full flex-col">
 						<div className="text-4xl font-light items-center flex italic">
 							<span className="font-extrabold not-italic">XYZ </span>
@@ -97,9 +97,7 @@ export default function Footer() {
 				</div>
 				<div className="flex flex-col my-6">
 					{/* straight line */}
-
 					<div className="w-full border border-nav-li my-6"></div>
-
 					{/* Social Media */}
 					<div className="flex justify-between items-center">
 						<div className="flex gap-4 text-base text-nav-li">

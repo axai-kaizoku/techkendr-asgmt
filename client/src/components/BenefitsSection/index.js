@@ -3,10 +3,10 @@ import BenefitCard from '../BenefitCard';
 export default function BenefitsSection() {
 	return (
 		<div className="w-full mt-16">
-			<h2 className="text-center font-extrabold text-7xl leading-[80px] text-regal-blue">
+			<h2 className="text-center max-sm:text-6xl font-extrabold text-7xl leading-[80px] text-regal-blue">
 				HOW IT WORKS?
 			</h2>
-			<p className="text-center my-10 font-normal text-xl leading-[24px] text-regal-blue">
+			<p className="text-center my-10 font-normal max-sm:text-base text-xl leading-[24px] text-regal-blue">
 				Step by Step Guide
 			</p>
 			<div className="flex flex-col justify-center items-center w-full ">

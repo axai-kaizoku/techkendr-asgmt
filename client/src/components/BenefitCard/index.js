@@ -7,15 +7,14 @@ export default function BenefitCard({
 }) {
 	return (
 		<div
-			className={`w-4/5 max-sm:w-full gap-14 max-sm:gap-4 max-sm:flex-row flex text-regal-blue/70 ${
+			className={`w-11/12 max-sm:w-full gap-14 max-sm:gap-4 max-sm:flex-row flex text-regal-blue/70 ${
 				align === 'right' ? 'flex-row-reverse' : ''
 			}`}>
-			<div
-				className={`w-2/5 h-2/6 max-sm:w-[220px] max-sm:h-[220px] rounded-3xl flex items-center justify-center overflow-hidden ${border}`}>
+			<div className="w-[320px] h-[320px] max-sm:w-[220px] max-sm:h-[220px] rounded-3xl flex items-center justify-center overflow-hidden ">
 				<img
 					src={src}
 					alt="benefit"
-					className="object-contain"
+					className={`object-contain ${border} rounded-3xl`}
 				/>
 			</div>
 			<div
