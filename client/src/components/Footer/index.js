@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { FaYoutube } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
@@ -6,23 +7,24 @@ import { FaFacebook } from 'react-icons/fa';
 import axios from 'axios';
 
 export default function Footer() {
+	const [error, setError] = useState('');
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		setError('');
 		try {
 			const email = e.target[0].value;
-			const res = await axios.post(process.env.SERVER_URL, {
+			const res = await axios.post('http://localhost:3030/api/v1/mailing', {
 				email: email,
 			});
-			if (res && res.data.success) {
-				//toast
-
+			if ((await res.status) === 201) {
 				e.target[0].value = '';
+				setError('');
 			} else {
-				//toast
+				setError(`Something went wrong`);
 			}
 		} catch (error) {
+			setError(`Error connecting server`);
 			console.log(error);
-			//toast
 		}
 	};
 	return (
@@ -81,10 +83,13 @@ export default function Footer() {
 								<p className="text-sm">Subscribe for our weekly newsletter</p>
 
 								<input
-									type="email"
-									className="w-[300px] h-[42px] rounded-lg px-4 py-2 my-3 focus:outline-none text-gray-500"
+									type="text"
+									className={`w-[300px] h-[42px] rounded-lg px-4 py-2 my-3 focus:outline-none text-gray-500 ${
+										error !== '' ? 'border-2 border-red-500' : ''
+									}`}
 									placeholder="Email Id"
 								/>
+
 								<button
 									type="submit"
 									className="w-[300px] h-[42px] rounded-lg bg-btn-blue focus:outline-none">
