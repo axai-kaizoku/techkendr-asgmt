@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./database/index');
 const mailRoutes = require('./routes/mailRoutes');
+const corsOptions = require('./config/corsOptions');
 
 // configure dotenv
 dotenv.config();
@@ -15,7 +16,7 @@ const PORT = process.env.SERVER_PORT || 8080;
 
 // middlewares
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
