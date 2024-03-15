@@ -7,6 +7,8 @@ module.exports = {
 				'regal-blue': '#071A45',
 				'nav-li': '#C9C6C2',
 				'btn-blue': '#3A7DFF',
+				'detail-rec': '#2C8FB5',
+				'custom-border': '#B0D5E3',
 			},
 		},
 	},
